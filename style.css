@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav{
+    background-color: transparent;
+    overflow: hidden;
+    width: 100vw;
+    position: relative;
+}
+
+.nav h1{
+    display: inline-block;
+    font-size: larger;
+    margin-left: 10px;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin-left: 65vw;
+}
+
+section {
+    background-image: url('media/br.jfif');
+    overflow: hidden;
+    position: relative;
+    height: 96.5vh;
+    width: 100vw;
+}
+
+section h1 {
+    font-size: .70in;
+    color:bisque;
+    text-shadow: 2px 2px gray;
+    margin-left: 18vw;
+    margin-top: 35vh;
+    position: relative;
+    z-index: 1;
+}
+
+.wrng1 {
+    animation: spin 15s linear infinite;
+}
+
+.ice {
+    animation: cide 15s linear infinite;
+}
+
+.lava {
+    animation: cide2 15s linear infinite;
+}
+
+.world {
+    animation: cent 20s ease infinite;
+}
+
+@keyframes spin{
+    0%{transform:translate(-100%, 100%);}
+    50%{transform: rotate(-50deg);}
+    75%{transform:translate(90%, 90%);}
+    100%{transform: rotate(50deg);}
+}
+
+@keyframes cide{
+    0%{transform:translate(-50% 50%);}
+    75%{transform: translateX(50%);}
+    100%{transform: rotate(50deg);}
+}
+
+@keyframes cide2{
+    0%{transform:translate(100%,-50%);}
+    75%{transform: translateY(50%);}
+    100%{transform: rotate(50deg);}
+}
+
+@keyframes cent{
+   0%{transform: translate(100%,-50%);}
+   25% {transform: rotate(25deg);}
+   50%{transform: rotate(90deg);}
+   100%{transform:rotate(180deg);}
+}
